@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Solver</title>
+</head>
+<body>
+    <h2>Math Expression Solver</h2>
+    <form method="POST">
+        <input type="text" name="expression" placeholder="Enter expression" value="{{ expression }}">
+        <button type="submit">Solve</button>
+    </form>
+    {% if result != '' %}
+        <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+</body>
+</html>
